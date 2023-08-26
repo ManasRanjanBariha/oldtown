@@ -1,11 +1,17 @@
-import React from 'react'
+import { Box } from "@mui/material";
+import React from "react";
+import Productcard from "../components/Productcard";
+import ProductTypes from "../components/ProductTypes";
+import Cousel from "../components/Cousel";
 
 const Home = () => {
   return (
-    <div>
-      helloooooo
-    </div>
-  )
-}
+    <Box>
+      <Box height={200}>
+        <ProductTypes/>
+      </Box>
+    </Box>
+  );
+};
 
-export default Home
+export default Home;

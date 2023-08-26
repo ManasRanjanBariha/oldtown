@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
+import AllRoutes from './components/AllRoutes'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Hello guys</h1>
+      <AllRoutes/>
     </>
   )
 }
