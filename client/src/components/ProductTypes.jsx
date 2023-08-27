@@ -2,13 +2,7 @@ import React, { useState } from "react";
 import Productcard from "./Productcard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "@emotion/styled";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  Autoplay,
-
-} from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import {
   Box,
   Button,
@@ -16,6 +10,7 @@ import {
   Card,
   CardContent,
   CardHeader,
+  Container,
   Stack,
   Typography,
 } from "@mui/material";
@@ -61,7 +56,7 @@ const femaleProductTypes = [
     image:
       "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280452boyfriend_fl.webp",
   },
-]
+];
 const productTypes = [
   {
     name: "Skinny",
@@ -90,6 +85,7 @@ const productTypes = [
   },
 ];
 
+
 const ProductTypes = () => {
   const [male, setMale] = useState(true);
   return (
@@ -97,8 +93,7 @@ const ProductTypes = () => {
       display={"flex"}
       sx={{ flexDirection: { xs: "column", lg: "row" } }}
       alignItems={"center"}
-      // height={"150px"}
-      width={"90vw"}
+      mt={5}
     >
       <Box textAlign={"center"} flex={2}>
         <Typography variant="h4">Find Your Fit</Typography>
@@ -145,9 +140,9 @@ const ProductTypes = () => {
       </Box>
 
       {!male && (
-        <Box width={"100%"}>
-          <Swiper 
-            modules={[ Navigation, Scrollbar,Autoplay]}
+        <Container fixed>
+          <Swiper
+            modules={[Navigation, Scrollbar, Autoplay]}
             spaceBetween={0}
             slidesPerView={5}
             autoplay={true}
@@ -157,19 +152,21 @@ const ProductTypes = () => {
           >
             {femaleProductTypes.map((e) => {
               return (
-                <SwiperSlide key={e.image}>
-                  <Box maxHeight={"5%"}>
-                  <Productcard  name={e.name} image={e.image} />
-                  </Box>
-                </SwiperSlide>
+                <Box sx={{ maxHeight: { lg: "250px", md: "none" } }}>
+                  <SwiperSlide key={e.image}>
+                    <Box maxHeight={"5%"}>
+                      <Productcard name={e.name} image={e.image} />
+                    </Box>
+                  </SwiperSlide>
+                </Box>
               );
             })}
           </Swiper>
-        </Box>
+        </Container>
       )}
-            
+
       {male && (
-        <Box width={"100%"} >
+        <Container>
           <Swiper
             spaceBetween={0}
             slidesPerView={5}
@@ -184,9 +181,8 @@ const ProductTypes = () => {
               );
             })}
           </Swiper>
-        </Box>
+        </Container>
       )}
-      
     </Stack>
   );
 };
