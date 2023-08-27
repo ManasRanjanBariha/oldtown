@@ -32,10 +32,10 @@ const Home = () => {
             justifyContent={"center"}
             textAlign={"center"}
           >
-            <Typography variant="h2" color="white.main">
-              FREEDOM PLESURE & PLAY
+            <Typography variant="h2" color="secondary.main">
+              FREEDOM PLEASURE & PLAY
             </Typography>
-            <Typography variant="h4" color={"white.main"}>Discover winter collection 2023</Typography>
+            <Typography variant="h4" color={"secondary.main"}>Discover winter collection 2023</Typography>
             <Stack
             mt={2}
               display={"flex"}

@@ -50,7 +50,7 @@ const SecondCoursel = () => {
               onClick={() => {
                 setMale(true);
               }}
-              color={male ? "error" : "secondary"}
+              color={male ? "error" : "black"}
             >
               Male
             </GenderButton>
@@ -58,7 +58,7 @@ const SecondCoursel = () => {
               onClick={() => {
                 setMale(false);
               }}
-              color={male ? "secondary" : "error"}
+              color={male ? "black" : "error"}
             >
               Female
             </GenderButton>
