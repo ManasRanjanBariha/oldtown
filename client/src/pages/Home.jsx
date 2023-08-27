@@ -5,6 +5,7 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Container,
   Paper,
   Stack,
   Typography,
@@ -16,12 +17,17 @@ import "../styles/homestyle.css";
 
 import SecondCoursel from "../components/SecondCoursel";
 
+
+
 import NavBar from "../components/NavBar";
+
 
 const bg1 =
   "https://cdn.pixabay.com/photo/2015/09/05/21/57/girl-925635_640.jpg";
 const Home = () => {
+  const arr = [1, 2, 3, 4, 5, 7, 8, 9, 9, 4];
   return (
+
     <>    <NavBar/>
     <Box mb={2} pb={2}>
       <Box m={0}>
@@ -36,26 +42,41 @@ const Home = () => {
               FREEDOM PLEASURE & PLAY
             </Typography>
             <Typography variant="h4" color={"secondary.main"}>Discover winter collection 2023</Typography>
+
             <Stack
-            mt={2}
               display={"flex"}
-              flexDirection={"row"}
-              gap={3}
+              flexDirection={"column"}
               justifyContent={"center"}
+              textAlign={"center"}
             >
-              <Button variant="contained" color="error" size="large">
-                Discover Man
-              </Button>
-              <Button variant="contained" color="error" size="large">
-                Discover Woman
-              </Button>
+              <Typography variant="h2" color="secondary">
+                FREEDOM PLESURE & PLAY
+              </Typography>
+              <Typography variant="h4" color={"secondary"}>
+                Discover winter collection 2023
+              </Typography>
+              <Stack
+                mt={2}
+                display={"flex"}
+                flexDirection={"row"}
+                gap={3}
+                justifyContent={"center"}
+              >
+                <Button variant="contained" color="error" size="large">
+                  Discover Man
+                </Button>
+                <Button variant="contained" color="error" size="large">
+                  Discover Woman
+                </Button>
+              </Stack>
             </Stack>
-          </Stack>
-        </div>
+          </div>
+        </Box>
+        <ProductTypes />
+        <SecondCoursel />
       </Box>
-      <ProductTypes />
-      <SecondCoursel/>
-      </Box>
+
+
       </>
 
   );

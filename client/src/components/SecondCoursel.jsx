@@ -42,7 +42,7 @@ const SecondCoursel = () => {
             variant="text"
             aria-label="text button group"
             size="large"
-            color="secondary"
+            color="black"
             border="2"
             bordercolor="secondary"
           >

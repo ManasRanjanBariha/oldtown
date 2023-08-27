@@ -23,7 +23,7 @@ import "swiper/css/autoplay";
 
 const GenderButton = styled(Button)(({ theme }) => ({
   fontWeight: "bolder",
-  color: "secondary",
+  color: "black",
   borderColor: "black",
 }));
 const femaleProductTypes = [
@@ -110,6 +110,7 @@ const ProductTypes = () => {
               onClick={() => {
                 setMale(true);
               }}
+
               color={male ? "error" : "black"}
             >
               Male

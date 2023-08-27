@@ -1,3 +1,4 @@
+
 import {
   AppBar,
   Box,
@@ -20,7 +21,11 @@ import LeftDrawer from "./LeftDrawer";
 const StyledToolBar = styled(Toolbar)({
   display: "inherit",
   justifyContent: "space-between",
+
+ 
+
   spacing:"0.5px",
+
   // fontWeight:"bold",
   flexDirection: "column",
 });
@@ -42,12 +47,21 @@ const RightButton = styled(Button)({
 const NavBar = () => {
   return (
     <AppBar position="sticky">
-        <Stack
-          direction="row"
-          spacing={2}
-          justifyContent={"space-between"}
-          
+      <Stack direction="row" spacing={2} justifyContent={"space-between"}>
+        <Toolbar sx={{ display: { xs: "none", md: "flex", xl: "center" } }}>
+          <StyledButton>MAN</StyledButton>
+          <StyledButton>WOMAN</StyledButton>
+          <StyledButton>KID</StyledButton>
+          <StyledButton>SALE</StyledButton>
+        </Toolbar>
+        {/* <Box display={"flex"} alignItems={"center"} justifyContent={"space-between" }> */}
+        <Box
+          sx={{
+            display: { xs: "block", sm: "block", md: "none" },
+            padding: "0px",
+          }}
         >
+
           <Toolbar sx={{ display: { xs: "none", md: "flex", xl: "center" } }}>
             <StyledButton>MAN</StyledButton>
             <StyledButton>WOMAN</StyledButton>
@@ -118,7 +132,6 @@ const NavBar = () => {
             </RightButton>
           </Toolbar>
         </Stack>
-   
     </AppBar>
   );
 };
