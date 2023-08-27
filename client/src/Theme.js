@@ -9,13 +9,14 @@ export const Theme = createTheme({
     },
     secondary:{
       main: '#fff',
+      black:'#000'
     },
     otherColor:{
       main:"#999"
     },
     white:{
-      main:'#fff',
+      main:"#fff"
     }
-  }
-})
+  },
+});
 

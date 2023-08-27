@@ -8,8 +8,8 @@ const Productcard = (prop) => {
     <Card sx={{}}>
       <CardMedia
         component={"img"}
-        height={"80%"}
-        width={"10%"}
+        max-height={"80%"}
+        width={"%"}
         image={image}
         alt={"Demo project"}
       ></CardMedia>
