@@ -14,7 +14,6 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Theme } from "../Theme";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -23,8 +22,9 @@ import "swiper/css/autoplay";
 
 const GenderButton = styled(Button)(({ theme }) => ({
   fontWeight: "bolder",
-  color: "black",
+  color: "secondary",
   borderColor: "black",
+  size: "large",
 }));
 const femaleProductTypes = [
   {
@@ -105,24 +105,24 @@ const ProductTypes = () => {
             size="large"
             color="black"
             border="2"
+            bordercolor="secondary"
           >
-            <GenderButton
-              onClick={() => {
-                setMale(true);
-              }}
-
-              color={male ? "error" : "black"}
-            >
-              Male
-            </GenderButton>
-            <GenderButton
-              onClick={() => {
-                setMale(false);
-              }}
-              color={male ? "black" : "error"}
-            >
-              Female
-            </GenderButton>
+          <GenderButton
+          onClick={() => {
+            setMale(true);
+          }}
+          color={male ? "error" : "black"}
+        >
+          Male
+        </GenderButton>
+        <GenderButton
+          onClick={() => {
+            setMale(false);
+          }}
+          color={male ? "black" : "error"}
+        >
+          Female
+        </GenderButton>
           </ButtonGroup>
         </Box>
         <Box
