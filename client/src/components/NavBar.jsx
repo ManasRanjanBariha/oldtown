@@ -2,7 +2,6 @@ import {
   AppBar,
   Box,
   Button,
-  Container,
   Stack,
   Toolbar,
   Typography,
@@ -19,8 +18,10 @@ import WorkIcon from "@mui/icons-material/Work";
 import LeftDrawer from "./LeftDrawer";
 
 const StyledToolBar = styled(Toolbar)({
-  display: "flex",
+  display: "inherit",
   justifyContent: "space-between",
+  spacing:"0.5px",
+  // fontWeight:"bold",
   flexDirection: "column",
 });
 const StyledButton = styled(Button)({
@@ -31,7 +32,7 @@ const StyledButton = styled(Button)({
 });
 const RightButton = styled(Button)({
   color: "white",
-  fontsize: "2px",
+  // size: "large",
   border: "1px solid white",
   "&:hover": {
     color: "black",
@@ -53,33 +54,67 @@ const NavBar = () => {
             <StyledButton>KID</StyledButton>
             <StyledButton>SALE</StyledButton>
           </Toolbar>
-          <Box display={"flex"} alignItems={"center"}>
-            <Box sx={{ display: { sm: "block", md: "none" } }}>
+          {/* <Box display={"flex"} alignItems={"center"} justifyContent={"space-between" }> */}
+            <Box sx={{ display: { xs: "block",sm:"block", md: "none" } ,padding:"0px"} }>
               {/* menu button for small screen */}
               <StyledButton>
                 <LeftDrawer />
               </StyledButton>
             </Box>
-            <StyledToolBar>
+            <StyledToolBar sx={{ display:{xs:"none",sm:"block"}}}>
               <Typography
                 variant="h4"
                 sx={{ fontFamily: "Scto_Grotesk_Regular" }}
               >
                 DIESEL
               </Typography>
-              successful livng
+              successful living
             </StyledToolBar>
-          </Box>
-          <Toolbar>
+
+            {/* for smaller screen (title) */}
+
+            <Toolbar sx={{ display:{xs:"block",sm:"none",md:"none"},fontSize:"10px" ,flexGrow:1 ,justifyContent:"left",alignItems:"left",padding:"0px"}}>
+              <Typography
+                variant="h6"
+                sx={{ fontFamily: "Scto_Grotesk_Regular" }}
+              >
+                DIESEL
+              </Typography >
+              successful livng
+            </Toolbar>
+          {/* </Box> */}
+
+          {/* for smaller screen */}
+
+          <Toolbar sx={{display:{xs:"flex",md: "none",xl:"none"}, padding:"0px"}}>
             <RightButton>
-              <Person2Icon fontSize="inherit" />
+              <Person2Icon fontSize="s"/>
             </RightButton>
             <RightButton>
-              <SearchIcon fontSize="inherit" />
+              <SearchIcon fontSize="s"/>
             </RightButton>
 
             <RightButton>
-              <WorkIcon fontSize="inherit" />
+              <WorkIcon  fontSize="s"/>
+            </RightButton>
+          </Toolbar>
+          {/* for bigger screen */}
+
+          <Toolbar sx={{display:{xs:"none",md:"flex",xl:"flex"}}}>
+            <RightButton>
+              <Person2Icon />
+            </RightButton>
+            <RightButton>
+              <SearchIcon />
+            </RightButton> 
+            <RightButton>
+              <FavoriteIcon />
+            </RightButton> 
+            <RightButton>
+              <QuestionMarkIcon />
+            </RightButton>           
+            <RightButton>
+              <WorkIcon />
             </RightButton>
           </Toolbar>
         </Stack>
