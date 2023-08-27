@@ -14,6 +14,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { Theme } from "../Theme";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -102,15 +103,14 @@ const ProductTypes = () => {
             variant="text"
             aria-label="text button group"
             size="large"
-            color="secondary"
+            color="black"
             border="2"
-            bordercolor="secondary"
           >
             <GenderButton
               onClick={() => {
                 setMale(true);
               }}
-              color={male ? "error" : "secondary"}
+              color={male ? "error" : "black"}
             >
               Male
             </GenderButton>
@@ -118,7 +118,7 @@ const ProductTypes = () => {
               onClick={() => {
                 setMale(false);
               }}
-              color={male ? "secondary" : "error"}
+              color={male ? "black" : "error"}
             >
               Female
             </GenderButton>
