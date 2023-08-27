@@ -13,6 +13,7 @@ import React from "react";
 import Productcard from "../components/Productcard";
 import ProductTypes from "../components/ProductTypes";
 import "../styles/homestyle.css";
+import SecondCoursel from "../components/SecondCoursel";
 const bg1 =
   "https://cdn.pixabay.com/photo/2015/09/05/21/57/girl-925635_640.jpg";
 const Home = () => {
@@ -48,6 +49,7 @@ const Home = () => {
         </div>
       </Box>
       <ProductTypes />
+      <SecondCoursel/>
       </Box>
   );
 };
