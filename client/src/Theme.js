@@ -1,4 +1,4 @@
-import {createTheme} from "@mui/material"
+import { createTheme } from "@mui/material";
 
 export const Theme = createTheme({
 
@@ -9,14 +9,14 @@ export const Theme = createTheme({
     },
     secondary:{
       main: '#fff',
-      black:'#000'
+      black:'black'
     },
     otherColor:{
       main:"#999"
     },
-    white:{
-      main:"#fff"
+    black:{
+      main:"#000"
     }
+    
   },
 });
-

@@ -15,17 +15,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import ProductTypes from "./ProductTypes";
-import SwipeableTemporaryDrawer from "./SwipeableTemporaryDrawer";
-
-import SecondCoursel from "./SecondCoursel";
+import SmallCard from "./SmallCard";
+import SmallCardCrousel from "./SmallCardCrousel";
 
 const Test = () => {
   return (
     <>
-      <h5>APPBar</h5>
-      <ProductTypes />
-      <SecondCoursel />
+    <SmallCardCrousel/>
     </>
   );
 };

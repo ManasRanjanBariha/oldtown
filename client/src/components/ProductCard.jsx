@@ -9,7 +9,7 @@ const Productcard = (prop) => {
       <CardMedia
         component={"img"}
         max-height={"80%"}
-        width={"%"}
+        
         image={image}
         alt={"Demo project"}
       ></CardMedia>

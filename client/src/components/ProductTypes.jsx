@@ -22,7 +22,7 @@ import "swiper/css/autoplay";
 
 const GenderButton = styled(Button)(({ theme }) => ({
   fontWeight: "bolder",
-  color: "secondary",
+  color: "black",
   borderColor: "black",
 }));
 const femaleProductTypes = [
@@ -102,7 +102,7 @@ const ProductTypes = () => {
             variant="text"
             aria-label="text button group"
             size="large"
-            color="secondary"
+            color="black"
             border="2"
             bordercolor="secondary"
           >
@@ -110,7 +110,7 @@ const ProductTypes = () => {
               onClick={() => {
                 setMale(true);
               }}
-              color={male ? "error" : "secondary"}
+              color={male ? "black" : "secondary"}
             >
               Male
             </GenderButton>
@@ -118,7 +118,7 @@ const ProductTypes = () => {
               onClick={() => {
                 setMale(false);
               }}
-              color={male ? "secondary" : "error"}
+              color={male ? "black" : "error"}
             >
               Female
             </GenderButton>
