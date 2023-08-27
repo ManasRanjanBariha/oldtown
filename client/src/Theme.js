@@ -1,6 +1,7 @@
-import { createTheme } from "@mui/material";
+
 
 export const Theme = createTheme({
+
   palette:{
     primary:{
       main: "#dc3530",
@@ -17,3 +18,4 @@ export const Theme = createTheme({
     }
   }
 })
+
