@@ -14,6 +14,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { Theme } from "../Theme";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -104,13 +105,13 @@ const ProductTypes = () => {
             size="large"
             color="black"
             border="2"
-            bordercolor="secondary"
           >
             <GenderButton
               onClick={() => {
                 setMale(true);
               }}
-              color={male ? "black" : "secondary"}
+
+              color={male ? "error" : "black"}
             >
               Male
             </GenderButton>
