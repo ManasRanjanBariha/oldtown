@@ -20,6 +20,8 @@ import SecondCoursel from "../components/SecondCoursel";
 
 
 import NavBar from "../components/NavBar";
+import { ImageCard } from "../components/ImageCard";
+import SmallCardCrousel from "../components/SmallCardCrousel";
 
 
 const bg1 =
@@ -72,7 +74,13 @@ const Home = () => {
           </div>
         </Box>
         <ProductTypes />
+        <Box marginBottom={20}>
         <SecondCoursel />
+        </Box>
+        <Box marginBottom={10}>
+        <SmallCardCrousel/>
+        </Box>
+        <ImageCard/>
       </Box>
 
 
