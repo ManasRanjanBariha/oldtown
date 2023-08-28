@@ -5,7 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { textDecoration } from "@chakra-ui/react";
+// import { textDecoration } from "@chakra-ui/react";
 import "../styles/LSFstyle.css";
 
 const Footer = () => {
@@ -63,7 +63,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="buttonsignupcontainer">
-              <button className="button" type="button">
+              <button className="button" type="button" >
                 Sign Up
               </button>
             </div>

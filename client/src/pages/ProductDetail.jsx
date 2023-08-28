@@ -8,6 +8,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "../styles/detailstyle.css";
 import NavBar from "../components/navbarComponents/NavBar";
+import Footer from "../components/Footer";
 
 
 const image =
@@ -64,6 +65,7 @@ const ProductDetail = () => {
 
             </div>
       </Stack>
+      <Footer/>
     </Box>
   );
 };
