@@ -44,7 +44,7 @@ const Home = () => {
                 textAlign={"center"}
               >
                 <Typography variant="h2" color="secondary">
-                  FREEDOM PLESURE & PLAY
+                  FREEDOM PLEASURE & PLAY
                 </Typography>
                 <Typography variant="h4" color={"secondary"}>
                   Discover winter collection 2023
@@ -55,11 +55,12 @@ const Home = () => {
                   flexDirection={"row"}
                   gap={3}
                   justifyContent={"center"}
+                  
                 >
-                  <Button variant="contained" color="error" size="large">
+                  <Button variant="contained" color="error" size="large" sx={{"&:hover":{border:"1px solid white"}}}>
                     Discover Man
                   </Button>
-                  <Button variant="contained" color="error" size="large">
+                  <Button variant="contained" color="error" size="large" sx={{"&:hover":{border:"1px solid white"}}}>
                     Discover Woman
                   </Button>
                 </Stack>

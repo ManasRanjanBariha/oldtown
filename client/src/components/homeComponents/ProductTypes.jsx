@@ -129,11 +129,11 @@ const ProductTypes = () => {
           justifyContent={"center"}
           flexDirection={"column"}
         >
-          <Typography variant="p">
+          <Typography>
             Find your next denim among a wide range
           </Typography>
           <Typography>
-            oftimeless denim washes, icons of low impact style,
+            of timeless denim washes, icons of low impact style,
           </Typography>
           <Typography> better for people and the planet.</Typography>
         </Box>
