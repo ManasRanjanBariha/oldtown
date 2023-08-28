@@ -14,6 +14,7 @@ const ProductCard2 = () => {
   return (
     <Card sx={{}}>
       <CardHeader />
+      
       <CardMedia
         component={"img"}
         max-height={"80%"}
