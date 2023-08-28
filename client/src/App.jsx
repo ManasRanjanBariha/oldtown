@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 
-import NavBar from './components/NavBar'
+import NavBar from './components/navbarComponents/NavBar'
 import './App.css'
 import AllRoutes from './components/AllRoutes'
 

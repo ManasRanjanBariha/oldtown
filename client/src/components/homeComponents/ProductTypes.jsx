@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Productcard from "./Productcard";
+import Productcard from "./ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "@emotion/styled";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
@@ -86,7 +86,6 @@ const productTypes = [
   },
 ];
 
-
 const ProductTypes = () => {
   const [male, setMale] = useState(true);
   return (
@@ -107,22 +106,22 @@ const ProductTypes = () => {
             border="2"
             bordercolor="secondary"
           >
-          <GenderButton
-          onClick={() => {
-            setMale(true);
-          }}
-          color={male ? "error" : "black"}
-        >
-          Male
-        </GenderButton>
-        <GenderButton
-          onClick={() => {
-            setMale(false);
-          }}
-          color={male ? "black" : "error"}
-        >
-          Female
-        </GenderButton>
+            <GenderButton
+              onClick={() => {
+                setMale(true);
+              }}
+              color={male ? "error" : "black"}
+            >
+              Male
+            </GenderButton>
+            <GenderButton
+              onClick={() => {
+                setMale(false);
+              }}
+              color={male ? "black" : "error"}
+            >
+              Female
+            </GenderButton>
           </ButtonGroup>
         </Box>
         <Box

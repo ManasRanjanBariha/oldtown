@@ -15,13 +15,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import SmallCard from "./SmallCard";
-import SmallCardCrousel from "./SmallCardCrousel";
+import SmallCard from "./homeComponents/SmallCard";
+import SmallCardCrousel from "./homeComponents/SmallCardCrousel";
 
 const Test = () => {
   return (
     <>
-    <SmallCardCrousel/>
+      <SmallCardCrousel />
     </>
   );
 };

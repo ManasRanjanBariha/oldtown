@@ -1,6 +1,6 @@
 import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
 import React from "react";
-import { Theme } from "../Theme";
+import { Theme } from "../../Theme";
 import styled from "@emotion/styled";
 import Person2Icon from "@mui/icons-material/Person2";
 import SearchIcon from "@mui/icons-material/Search";
