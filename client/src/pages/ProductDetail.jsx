@@ -1,20 +1,21 @@
 import { Box, Button, Card, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-import ProductPost from "../components/ProductPost";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import "../styles/productdetails.css";
+import "../styles/detailstyle.css";
+import NavBar from "../components/navbarComponents/NavBar";
+
 
 const image =
   "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:900)/product/410373676009/665/410373676009_1_7098.webp";
 const ProductDetail = () => {
   return (
     <Box>
+      <NavBar/>
       <Stack
         direction={{md:"column",lg:"row"}}
         sx={{direction:{md:"column",lg:"row"}}}
