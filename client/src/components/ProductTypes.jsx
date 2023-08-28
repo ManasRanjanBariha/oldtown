@@ -136,7 +136,7 @@ const ProductTypes = () => {
           <Typography>
             of timeless denim washes, icons of low impact style,
           </Typography>
-          <Typography> better for people and the planet.</Typography>
+          <Typography> better for people and also the planet.</Typography>
         </Box>
       </Box>
 
