@@ -6,12 +6,12 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import SmallCard from "./SmallCard";
 import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
-import { Container, Stack } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 
 const SmallCardCrousel = () => {
   const arr = [1, 2, 3, 4, 5, 7, 8, 9];
   return (
-    <Stack display={"block"}>
+    <Stack display={"flex"} justifyContent={"center"} maxHeight={45}>
       <Container>
         <Swiper
           modules={[Navigation, Scrollbar, Autoplay]}
@@ -19,13 +19,15 @@ const SmallCardCrousel = () => {
           slidesPerView={6}
           autoplay={true}
           navigation
-          // onSlideChange={() => console.log("slide change")}
-          // onSwiper={(swiper) => console.log("Working")}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log("Working")}
         >
           {arr.map((e) => {
-            <SwiperSlide key={e}>
-              <SmallCard />
-            </SwiperSlide>;
+            return (
+              <SwiperSlide key={e}>
+                <SmallCard />
+              </SwiperSlide>
+            );
           })}
         </Swiper>
       </Container>

@@ -5,7 +5,7 @@ const img="https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/
 const SmallCard = () => {
   return (
 
-    <Card>
+    <Card >
     <CardMedia 
     component={"img"}
     max-height={"80%"}

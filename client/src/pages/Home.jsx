@@ -18,6 +18,8 @@ import "../styles/homestyle.css";
 import SecondCoursel from "../components/homeComponents/SecondCoursel";
 
 import NavBar from "../components/navbarComponents/NavBar";
+import { ImageCard } from "../components/homeComponents/ImageCard";
+import SmallCardCrousel from "../components/homeComponents/SmallCardCrousel";
 
 const bg1 =
   "https://cdn.pixabay.com/photo/2015/09/05/21/57/girl-925635_640.jpg";
@@ -66,7 +68,13 @@ const Home = () => {
           </div>
         </Box>
         <ProductTypes />
+        <Box marginBottom={20}>
         <SecondCoursel />
+        </Box>
+        <Box marginBottom={10}>
+        <SmallCardCrousel/>
+        </Box>
+        <ImageCard/>
       </Box>
     </>
   );
