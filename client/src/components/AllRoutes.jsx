@@ -7,7 +7,7 @@ import Products from "../pages/Products";
 import ProductDetail from "../pages/ProductDetail";
 import Login from "../pages/Login";
 import UserDetails from "../pages/UserDetails";
-import { Admin } from '../pages/Admin'
+import  Admin  from '../pages/Admin'
 const AllRoutes = () => {
   return (
     <Routes>

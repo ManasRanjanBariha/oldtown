@@ -1,7 +1,6 @@
 import { AppBar } from "@mui/material";
 import React from "react";
 import NavBar from "../components/navbarComponents/NavBar";
-
 const Login = () => {
   return (
     <>

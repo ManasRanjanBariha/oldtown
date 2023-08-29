@@ -13,17 +13,22 @@ import {
 import NavBar from "../components/navbarComponents/NavBar";
 
 
+
 const Admin = () => {
+  
   const [name,setName]=useState('')
   const [desc,setDesc]=useState('')
   const [image1,setImage1]=useState('')
   const [image2,setImage2]=useState('')
   const [image3,setImage3]=useState('')
-
+  const [product,setProduct]=useState('')
   const [price,setPrice]=useState(0)
   const [category, setCategory] = React.useState("");
   const [size, setSize] = useState("");
 
+  function handleProduct(event){
+    setProduct(event.target.value)
+  } 
 
   const handleCategory = (event) =>{
     setCategory(event.target.value);
@@ -42,11 +47,7 @@ const Admin = () => {
     else if (id === "image3") setImage3(value);
     else if (id === "price") setPrice(value);
   };
-  async function submitData(obj)
-  {
-
-  }
-  async function onSubmit()
+  function onSubmit()
   {
     if (
       name === "" ||
@@ -56,10 +57,27 @@ const Admin = () => {
       image3 === "" ||
       price === 0 ||
       category === "" ||
-      size === ""
+      size === "" ||
+      product ===""
     ){
       alert('Enter all the field')
+      return
     }
+    dataPost()
+    setName('')
+    setCategory('')
+    setDesc('')
+    setImage1('')
+    setImage2('')
+    setImage3('')
+    setPrice(0)
+    setSize('')
+    setProduct('')
+  }
+  
+  async function dataPost()
+  {
+    
     
     const obj={
       name:name,
@@ -68,6 +86,7 @@ const Admin = () => {
       image2:image2,
       image3:image3,
       price:price,
+      product:product,
       category:category,
       size:size
     }
@@ -78,7 +97,9 @@ const Admin = () => {
         "Content-type": "application/json",
       }
     });
-    console.log(obj)
+    // console.log(obj)
+    
+
   }
 
   return (
@@ -187,6 +208,20 @@ const Admin = () => {
           </Select>
         </FormControl>
 
+        <FormControl fullWidth sx={{ backgroundColor: "#87CEEB" }}>
+          <InputLabel id="demo-simple-select-label">Product *</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="product"
+            value={product}
+            label="Size"
+            onChange={handleProduct}
+          >
+            <MenuItem value={"jeans"}>Jeans</MenuItem>
+            <MenuItem value={"accessories"}>Accessories</MenuItem>
+            <MenuItem value={"t-shirt"}>T-shirt</MenuItem>
+          </Select>
+        </FormControl>
         <FormControl fullWidth sx={{ backgroundColor: "#87CEEB" }}>
           <InputLabel id="demo-simple-select-label">Size *</InputLabel>
           <Select
