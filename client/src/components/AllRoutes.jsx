@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import Test from './Test'
 import Products from '../pages/Products'
 import ProductDetail from '../pages/ProductDetail'
+import { Admin } from '../pages/Admin'
 const AllRoutes = () => {
   return (
     <Routes>
@@ -12,6 +13,7 @@ const AllRoutes = () => {
         <Route path='/test1' element={<Test/>}/>
         <Route path='/Products' element={<Products/>}/>
         <Route path='/Productdetails' element={<ProductDetail/>}/>
+        <Route path='/admin' element={<Admin/>}></Route>
     </Routes>
   )
 }
