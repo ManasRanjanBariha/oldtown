@@ -11,7 +11,7 @@ const img="https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/
 
 
 const ProductStyle=(prop)=> {
-  const { name, image } = prop;
+  const { name, image1,price } = prop;
   return (
     <Grid marginTop={"3%"}>
     <Card sx={{ maxWidth: 345 }}>
@@ -19,16 +19,15 @@ const ProductStyle=(prop)=> {
         <CardMedia
           component="img"
           height="80%"
-          image={image}
+          image={image1}
           alt="product_images"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            ${name}
+          ₹{price}
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{whiteSpace: "nowrap", overflow: "hidden",textOverflow: "ellipsis"}}>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {name}
           </Typography>
         </CardContent>
      </CardActionArea>
