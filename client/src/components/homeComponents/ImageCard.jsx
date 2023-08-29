@@ -5,8 +5,8 @@ export const ImageCard = () => {
   return (
     <Box
       sx={{
-        width: 400,
-        height: 500,
+        width: "100%",
+        height: "35vw",
         background: "white",
         alignItems: "center",
         justifyContent: "center",
@@ -15,8 +15,8 @@ export const ImageCard = () => {
     >
       <Box
         sx={{
-          width: 400,
-          height: 300,
+          width:"100%",
+          height:"35vw",
           alignItems: "center",
           justifyContent: "center",
           display: "flex",
@@ -27,7 +27,7 @@ export const ImageCard = () => {
         }}
       >
         <div className="image">
-          <h1 style={{color:"white"}}>LOGOMANIA</h1>
+          <h1 style={{ color: "white" }}>LOGOMANIA</h1>
         </div>
       </Box>
     </Box>

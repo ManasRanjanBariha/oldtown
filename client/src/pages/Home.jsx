@@ -6,6 +6,7 @@ import {
   CardContent,
   CardMedia,
   Container,
+  Grid,
   Paper,
   Stack,
   Typography,
@@ -26,6 +27,7 @@ const bg1 =
   "https://cdn.pixabay.com/photo/2015/09/05/21/57/girl-925635_640.jpg";
 const Home = () => {
   const arr = [1, 2, 3, 4, 5, 7, 8, 9, 9, 4];
+  const ar1 = [1, 2, 3, 4];
   return (
     <>
       <NavBar />
@@ -56,12 +58,21 @@ const Home = () => {
                   flexDirection={"row"}
                   gap={3}
                   justifyContent={"center"}
-                  
                 >
-                  <Button variant="contained" color="error" size="large" sx={{"&:hover":{border:"1px solid white"}}}>
+                  <Button
+                    variant="contained"
+                    color="error"
+                    size="large"
+                    sx={{ "&:hover": { border: "1px solid white" } }}
+                  >
                     Discover Man
                   </Button>
-                  <Button variant="contained" color="error" size="large" sx={{"&:hover":{border:"1px solid white"}}}>
+                  <Button
+                    variant="contained"
+                    color="error"
+                    size="large"
+                    sx={{ "&:hover": { border: "1px solid white" } }}
+                  >
                     Discover Woman
                   </Button>
                 </Stack>
@@ -71,14 +82,25 @@ const Home = () => {
         </Box>
         <ProductTypes />
         <Box marginBottom={20}>
-        <SecondCoursel />
+          <SecondCoursel />
         </Box>
         <Box marginBottom={10}>
-        <SmallCardCrousel/>
+          <SmallCardCrousel />
         </Box>
-        <ImageCard/>
+        <Box mb={20} />
+        <Container>
+        <Grid container spacing={3}>
+          {ar1.map((e) => {
+            return (
+              <Grid item xs={6}>
+                <ImageCard />
+              </Grid>
+            );
+          })}
+        </Grid>
+        </Container>
       </Box>
-      <Footer/>
+      <Footer />
     </>
   );
 };
