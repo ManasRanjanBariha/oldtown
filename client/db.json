@@ -7,7 +7,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373919003/665/410373919003_3_3252.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373919003/665/410373919003_4_6570.webp",
       "price": "49999",
-      "category": "Male",
+      "category": "Men",
       "size": "Large",
       "id": 1
     },
@@ -18,7 +18,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373806008/665/410373806008_2_6523.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373806008/665/410373806008_3_4215.webp",
       "price": "27999",
-      "category": "Male",
+      "category": "Men",
       "size": "Large",
       "id": 2
     },
@@ -29,7 +29,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410360453006/665/410360453006_2_4177.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:900)/product/410360453006/665/410360453006_3_7280.webp",
       "price": "2000",
-      "category": "Female",
+      "category": "Women",
       "size": "Medium",
       "id": 3
     },
@@ -40,7 +40,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373892004/665/410373892004_2_3916.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373892004/665/410373892004_3_1922.webp",
       "price": "5000",
-      "category": "Female",
+      "category": "Women",
       "size": "Medium",
       "id": 4
     },
@@ -52,13 +52,13 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372722004/665/410372722004_5_1805.webp",
       "price": "3000",
       "product": "jeans",
-      "category": "Female",
+      "category": "Women",
       "size": "Medium",
       "id": 5
     }
   ],
   "jeans": {
-    "femalejeans": [
+    "Womenjeans": [
       {
         "name": "Bootcut",
         "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
@@ -84,7 +84,7 @@
         "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280452boyfriend_fl.webp"
       }
     ],
-    "malejeans": [
+    "Menjeans": [
       {
         "name": "Skinny",
         "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281091skinny_ml.webp"

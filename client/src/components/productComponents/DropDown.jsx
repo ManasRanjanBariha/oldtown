@@ -6,10 +6,23 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { Grid, Stack } from '@mui/material';
 import ProductStyle from './ProductStyle';
+import { useEffect } from 'react';
 
 export default function DropDown() {
   const [category, setCategory] = React.useState('');
   const [size, setSize] = React.useState('');
+  const [prod,setProd]=React.useState([]);
+
+  async function filterData(){
+      let res= await fetch("http://localhost:3000/product")
+      let data=await res.json()
+      setProd(data);
+      console.log(data);
+  }
+  useEffect(()=>{
+    filterData()
+    console.log(prod)
+  },[])
 
   const handleChange = (event) => {
     setCategory(event.target.value);
@@ -19,42 +32,8 @@ export default function DropDown() {
     setSize(event.target.value);
     
   };
-  const arr=[
-    1,2,3,4,5,6,7,8,9
-  ]
-  const prods = [
-    {
-      name: "Bootcut",
-      image:
-        "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp",
-    },
-    {
-      name: "Slim",
-      image:
-        "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp",
-    },
-    {
-      name: "Skinny",
-      image:
-        "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp",
-    },
-    {
-      name: "Straight",
-      image:
-        "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280493straight_fl.webp",
-    },
-    {
-      name: "Skinny",
-      image:
-        "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280599superskinny_fl.webp",
-    },
-    {
-      name: "Boyfriend",
-      image:
-        "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280452boyfriend_fl.webp",
-    },
-  ];
 
+  
   return (
     <Box>
     <Stack direction="row" spacing={2} marginTop={"2%"}>
@@ -98,11 +77,16 @@ export default function DropDown() {
     </Stack>
 
     <Box display="flex" flexDirection="row" flexWrap="wrap">
-        {prods.map((item) => (
-          <Box key={item} flexGrow={1} maxWidth="25%" padding="16px">
-            <ProductStyle {...item} />
-          </Box>
-        ))}
+        {
+          prod.map((el)=>{
+            return (
+              <Box key={el.id}>
+                <ProductStyle {...el}/>
+
+                </Box>
+            )
+          })
+        }
       </Box>
     </Box>
 
