@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Productcard from "./ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "@emotion/styled";
@@ -26,68 +26,23 @@ const GenderButton = styled(Button)(({ theme }) => ({
   borderColor: "black",
   size: "large",
 }));
-const femaleProductTypes = [
-  {
-    name: "Bootcut",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp",
-  },
-  {
-    name: "Slim",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp",
-  },
-  {
-    name: "Skinny",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp",
-  },
-  {
-    name: "Straight",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280493straight_fl.webp",
-  },
-  {
-    name: "Skinny",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280599superskinny_fl.webp",
-  },
-  {
-    name: "Boyfriend",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280452boyfriend_fl.webp",
-  },
-];
-const productTypes = [
-  {
-    name: "Skinny",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281091skinny_ml.webp",
-  },
-  {
-    name: "Straight",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281044straight_ml.webp",
-  },
-  {
-    name: "Tappered",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281019tapered_ml.webp",
-  },
-  {
-    name: "Slim",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281067slim_ml.webp",
-  },
-  {
-    name: "Bootcut",
-    image:
-      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281067slim_ml.webp",
-  },
-];
+
 
 const ProductTypes = () => {
+  const [malejeans,setMalejeans]=useState([])
+  const [femalejeans,setFemalejeans]=useState([])
   const [male, setMale] = useState(true);
+  async function fetchData(){
+    let res= await fetch('http://localhost:3000/jeans')
+    let data= await res.json();
+    console.log(data)
+    setFemalejeans(data.femalejeans)
+    setMalejeans(data.malejeans)
+  }
+  useEffect(()=>{
+    fetchData()
+    
+  },[])
   return (
     <Stack
       display={"flex"}
@@ -150,7 +105,7 @@ const ProductTypes = () => {
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log("Working")}
           >
-            {femaleProductTypes.map((e) => {
+            {femalejeans.map((e) => {
               return (
                 <Box sx={{ maxHeight: { lg: "250px", md: "none" } }}>
                   <SwiperSlide key={e.image}>
@@ -173,7 +128,7 @@ const ProductTypes = () => {
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            {productTypes.map((e) => {
+            {malejeans.map((e) => {
               return (
                 <SwiperSlide key={e.name}>
                   <Productcard name={e.name} image={e.image} />

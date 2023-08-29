@@ -1,8 +1,11 @@
+import { AppBar } from "@mui/material";
 import React from "react";
+import NavBar from "../components/navbarComponents/NavBar";
 
 const Login = () => {
   return (
     <>
+      <NavBar/>
       <div className="loginbox">
         <div className="container">
           <div className="form">
@@ -11,6 +14,7 @@ const Login = () => {
               <label className="label">SignIn or SignUp</label>
               <input
                 placeholder="Mobile Number*"
+                required
                 type="text"
                 name="newnumber"
                 autocomplete="off"
