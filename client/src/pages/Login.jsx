@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "../components/navbarComponents/NavBar";
-
 const Login = () => {
   const [phone, setPhone] = useState("");
   const [otp, setOtp] = useState("");
