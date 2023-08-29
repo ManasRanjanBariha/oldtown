@@ -7,8 +7,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import WorkIcon from "@mui/icons-material/Work";
-
 import LeftDrawer from "./LeftDrawer";
+import { useNavigate } from "react-router-dom";
 
 const StyledToolBar = styled(Toolbar)({
   display: "inherit",
@@ -33,12 +33,26 @@ const RightButton = styled(Button)({
 });
 
 const NavBar = () => {
+  
+  const nav = useNavigate();
+
+  function loginorsignup() {
+    nav("/login");
+  }
+  function navigatemen()
+  {
+    nav('/Products/man')
+  }
+  function navigatewomen()
+  {
+    nav('/Products/women')
+  }
   return (
     <AppBar position="sticky">
       <Stack direction="row" spacing={2} justifyContent={"space-between"}>
         <Toolbar sx={{ display: { xs: "none", md: "flex", xl: "center" } }}>
-          <StyledButton>MAN</StyledButton>
-          <StyledButton>WOMAN</StyledButton>
+          <StyledButton onClick={navigatemen}>MAN</StyledButton>
+          <StyledButton onClick={navigatewomen}>WOMAN</StyledButton>
           <StyledButton>KID</StyledButton>
           <StyledButton>SALE</StyledButton>
         </Toolbar>
@@ -54,7 +68,9 @@ const NavBar = () => {
             <LeftDrawer />
           </StyledButton>
         </Box>
-        <StyledToolBar sx={{ display: { xs: "none", sm: "block" } }}>
+        <StyledToolBar sx={{ display: { xs: "none", sm: "block",cursor:"pointer"} }} onClick={()=>{
+          nav('/')
+        }}>
           <Typography variant="h4" sx={{ fontFamily: "Scto_Grotesk_Regular" }}>
             DIESEL
           </Typography>
