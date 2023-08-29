@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Box,
   TextField,
@@ -8,36 +8,86 @@ import {
   InputAdornment,
   Select,
   MenuItem,
+  Button,
 } from "@mui/material";
-// import Theme from "../Theme"
+import NavBar from "../components/navbarComponents/NavBar";
 
-export const Admin = () => {
+
+const Admin = () => {
+  const [name,setName]=useState('')
+  const [desc,setDesc]=useState('')
+  const [image1,setImage1]=useState('')
+  const [image2,setImage2]=useState('')
+  const [image3,setImage3]=useState('')
+
+  const [price,setPrice]=useState(0)
   const [category, setCategory] = React.useState("");
   const [size, setSize] = useState("");
-  // console.log(category);
-  // console.log(size);
 
-  const handleOnChange = () =>{
-      console.log("Jyoti");
-  }
+
   const handleCategory = (event) =>{
     setCategory(event.target.value);
-    // console.log("Category which has been selected is ");
-    
+    console.log(event.target.value)
   }
 
   const handleSize = (event) =>{
     setSize(event.target.value);
-    // console.log("size which has been selected is ");
+  }
+  const handleOnChange = (e) => {
+    const { id, value } = e.target;
+    if (id === "name") setName(value);
+    else if (id === "desc") setDesc(value);
+    else if (id === "image1") setImage1(value);
+    else if (id === "image2") setImage2(value);
+    else if (id === "image3") setImage3(value);
+    else if (id === "price") setPrice(value);
+  };
+  async function submitData(obj)
+  {
+
+  }
+  async function onSubmit()
+  {
+    if (
+      name === "" ||
+      desc === "" ||
+      image1 === "" ||
+      image2 === "" ||
+      image3 === "" ||
+      price === 0 ||
+      category === "" ||
+      size === ""
+    ){
+      alert('Enter all the field')
+    }
     
+    const obj={
+      name:name,
+      desc:desc,
+      image1:image1,
+      image2:image2,
+      image3:image3,
+      price:price,
+      category:category,
+      size:size
+    }
+    let res = await fetch("http://localhost:3000/product", {
+      method: "POST",
+      body: JSON.stringify(obj),
+      headers: {
+        "Content-type": "application/json",
+      }
+    });
+    console.log(obj)
   }
 
   return (
+    <>
+   
     <Box
       component="form"
       sx={{
-        "& .MuiTextField-root": { m: 1, width: "100%" }, // Set width to 100%
-        //  backgroundColor: '#ffcc00', // Set your desired background color
+        "& .MuiTextField-root": { m: 1, width: "100%" }, 
       }}
       display={"flex"}
       justifyContent={"center"}
@@ -49,25 +99,38 @@ export const Admin = () => {
 
 
       <TextField
-        id="outlined-multiline-flexible"
+        id="name"
         label="Product Name *"
         multiline
         maxRows={4}
-        fullWidth // Make this text field full width
+        fullWidth 
         sx={{
-          backgroundColor: "#87CEEB", // Set your desired background color
+          backgroundColor: "#87CEEB", 
         }}
         onChange={handleOnChange}
       />
 
 
       <TextField
-        id="outlined-multiline-static"
+        id="desc"
         label="Product Description *"
         multiline
         rows={5}
         // defaultValue="Default"
+        fullWidth
+        
+        sx={{
+          backgroundColor: "#87CEEB", 
+        }}
+        onChange={handleOnChange}
+      />
+
+
+      <TextField
         fullWidth // Make this text field full width
+        label="Image link"
+        id="image1"
+        required
         sx={{
           backgroundColor: "#87CEEB", // Set your desired background color
         }}
@@ -78,36 +141,27 @@ export const Admin = () => {
       <TextField
         fullWidth // Make this text field full width
         label="Image link"
-        id="fullWidth"
-        required
+        id="image2"
         sx={{
           backgroundColor: "#87CEEB", // Set your desired background color
         }}
+        onChange={handleOnChange}
       />
 
 
       <TextField
         fullWidth // Make this text field full width
         label="Image link"
-        id="fullWidth"
+        id="image3"
         sx={{
           backgroundColor: "#87CEEB", // Set your desired background color
         }}
+        onChange={handleOnChange}
       />
 
 
       <TextField
-        fullWidth // Make this text field full width
-        label="Image link"
-        id="fullWidth"
-        sx={{
-          backgroundColor: "#87CEEB", // Set your desired background color
-        }}
-      />
-
-
-      <TextField
-        id="outlined-multiline-flexible"
+        id="price"
         label="$Price *"
         multiline
         maxRows={4}
@@ -115,6 +169,7 @@ export const Admin = () => {
         sx={{
           backgroundColor: "#87CEEB", // Set your desired background color
         }}
+        onChange={handleOnChange}
       />
 
       <Box sx={{ display: "flex", paddingX: "20%" }}>
@@ -146,7 +201,14 @@ export const Admin = () => {
             <MenuItem value={"Large"}>Large</MenuItem>
           </Select>
         </FormControl>
+        
       </Box>
+      <Box mb={2}></Box>
+      <Button variant="contained" onClick={onSubmit}>Submit</Button>
     </Box>
+    </>
   );
 };
+ 
+
+export default Admin;
