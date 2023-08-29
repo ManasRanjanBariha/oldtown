@@ -1,83 +1,65 @@
 {
-  "posts": [
+  "product": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "D-KAMA BLUE LOOSE LOGO SHIRTS",
+      "desc": "This men's denim shirt features a slightly oversized silhouette with dropped sleeves. Crafted from light blue TENCEL™ Lyocell denim and decorated on the back yoke with a large, super stonewashed Oval D logo patch finished with raw edges.",
+      "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373919003/665/410373919003_1_8341.webp",
+      "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373919003/665/410373919003_3_3252.webp",
+      "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373919003/665/410373919003_4_6570.webp",
+      "price": "49999",
+      "category": "Male",
+      "size": "Large",
+      "id": 1
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "jeans":
-    {
-      "femalejeans":[
-        {
-          "name": "Bootcut",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
-        },
-        {
-          "name": "Slim",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
-        },
-        {
-          "name": "Skinny",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
-        },
-        {
-          "name": "Straight",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280493straight_fl.webp"
-        },
-        {
-          "name": "Skinny",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280599superskinny_fl.webp"
-        },
-        {
-          "name": "Boyfriend",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280452boyfriend_fl.webp"
-        }
-      ],
-      "malejeans":[
-        {
-          "name": "Skinny",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281091skinny_ml.webp"
-        },
-        {
-          "name": "Straight",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281044straight_ml.webp"
-        },
-        {
-          "name": "Tappered",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281019tapered_ml.webp"
-        },
-        {
-          "name": "Slim",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281067slim_ml.webp"
-        },
-        {
-          "name": "Bootcut",
-          "image":
-            "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281067slim_ml.webp"
-        }
-      ]
-    }
-  
-  
+  "jeans": {
+    "femalejeans": [
+      {
+        "name": "Bootcut",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
+      },
+      {
+        "name": "Slim",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
+      },
+      {
+        "name": "Skinny",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
+      },
+      {
+        "name": "Straight",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280493straight_fl.webp"
+      },
+      {
+        "name": "Skinny",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280599superskinny_fl.webp"
+      },
+      {
+        "name": "Boyfriend",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280452boyfriend_fl.webp"
+      }
+    ],
+    "malejeans": [
+      {
+        "name": "Skinny",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281091skinny_ml.webp"
+      },
+      {
+        "name": "Straight",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281044straight_ml.webp"
+      },
+      {
+        "name": "Tappered",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281019tapered_ml.webp"
+      },
+      {
+        "name": "Slim",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281067slim_ml.webp"
+      },
+      {
+        "name": "Bootcut",
+        "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281067slim_ml.webp"
+      }
+    ]
+  }
 }
