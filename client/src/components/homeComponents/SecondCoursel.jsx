@@ -6,7 +6,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ProductCard2 from "./ProductCard2";
 import styled from "@emotion/styled";
 import { useState } from "react";
@@ -28,6 +28,30 @@ const GenderButton = styled(Button)(({ theme }) => ({
 
 const SecondCoursel = () => {
   const [male, setMale] = useState(true);
+  const [products,setProducts]=useState([])
+  async function fetchDataWomen() {
+    let res = await fetch(
+      "http://localhost:3000/product/?category=Women&_limit=6"
+    );
+    let data = await res.json();
+    setProducts(data);
+  }
+  async function fetchDataMen() {
+    let res = await fetch(
+      "http://localhost:3000/product/?category=Men&_limit=5"
+    );
+    let data = await res.json();
+    setProducts(data);
+    console.log('data',products)
+  }
+  useEffect(()=>{
+    fetchDataMen()
+  },[])
+  
+  useEffect(() => {
+    male ? fetchDataMen() : fetchDataWomen();
+    console.log(products);
+  }, [male]);
   return (
     <Stack
       display={"flex"}
@@ -75,10 +99,10 @@ const SecondCoursel = () => {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log("Working")}
         >
-          {arr.map((e) => {
+          {products.map((e) => {
             return (
               <SwiperSlide>
-                <ProductCard2 />
+                <ProductCard2 {...e}/>
               </SwiperSlide>
             );
           })}

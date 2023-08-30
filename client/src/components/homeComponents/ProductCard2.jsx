@@ -12,7 +12,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 const bg1 =
   "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:450)/product/410373919003/300/410373919003_1_9379.webp";
 
-const ProductCard2 = () => {
+const ProductCard2 = (props) => {
   return (
     <Card sx={{ position: "relative" }}>
       {/* Add the favorite icon in the top right corner */}
@@ -28,12 +28,12 @@ const ProductCard2 = () => {
         component={"img"}
         max-height={"80%"}
         width={"%"}
-        image={bg1}
+        image={props.image1}
         alt={"Demo project"}
       ></CardMedia>
       <CardContent>
         <Typography variant={"h6"} textAlign={"center"}>
-          Hoody
+          {props.name}
         </Typography>
         <Typography variant={"p"} textAlign={"center"}>
           Hoody

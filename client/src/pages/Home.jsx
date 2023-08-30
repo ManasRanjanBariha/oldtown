@@ -27,9 +27,12 @@ const bg1 =
   "https://cdn.pixabay.com/photo/2015/09/05/21/57/girl-925635_640.jpg";
 const Home = () => {
   const [login, setLogin] = useState(false);
+  const [products,setProducts]=useState([])
   const arr = [1, 2, 3, 4, 5, 7, 8, 9, 9, 4];
   const ar1 = [1, 2, 3, 4];
   const nav = useNavigate();
+
+  
 
   function loginorsignup() {
     nav("/login");
