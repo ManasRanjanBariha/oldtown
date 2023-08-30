@@ -7,9 +7,22 @@ import "swiper/css/autoplay";
 import SmallCard from "./SmallCard";
 import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
 import { Box, Container, Stack } from "@mui/material";
+import { useEffect, useState } from "react";
 
 const SmallCardCrousel = () => {
-  const arr = [1, 2, 3, 4, 5, 7, 8, 9];
+  // const arr = [1, 2, 3, 4, 5, 7, 8, 9];
+  const [products,setProducts]=useState([])
+  async function fetchData() {
+    let res = await fetch(
+      "http://localhost:3000/ptype"
+    );
+    let data = await res.json();
+    setProducts(data);
+    console.log('data',products)
+  }
+  useEffect(()=>{
+    fetchData()
+  },[])
   return (
     <Stack display={"flex"} justifyContent={"center"} maxHeight={45}>
       <Container>
@@ -22,10 +35,10 @@ const SmallCardCrousel = () => {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log("Working")}
         >
-          {arr.map((e) => {
+          {products.map((e) => {
             return (
               <SwiperSlide key={e}>
-                <SmallCard />
+                <SmallCard {...e} />
               </SwiperSlide>
             );
           })}

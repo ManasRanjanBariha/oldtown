@@ -4,18 +4,21 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Grid, Hidden } from '@mui/material';
-
+import {useNavigate} from 'react-router-dom'
 
 const img="https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410279568029/665/410279568034_1_8604.webp"
 
 
 
 const ProductStyle=(prop)=> {
+  const nav=useNavigate()
   const { name, image1,price } = prop;
   return (
     <Grid marginTop={"3%"}>
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      <CardActionArea onClick={()=>{
+        nav(`/productdetails/${prop.id}`)
+      }}>
         <CardMedia
           component="img"
           height="80%"

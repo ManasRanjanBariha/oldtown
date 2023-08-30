@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Card,
+  CardActionArea,
   CardContent,
   CardHeader,
   CardMedia,
@@ -8,14 +9,14 @@ import {
   Typography,
 } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-
-const bg1 =
-  "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:450)/product/410373919003/300/410373919003_1_9379.webp";
-
+import {useNavigate} from 'react-router-dom'
 const ProductCard2 = (props) => {
+  const nav=useNavigate()
   return (
-    <Card sx={{ position: "relative" }}>
-      {/* Add the favorite icon in the top right corner */}
+    <Card sx={{ position: "relative" }} >
+      <CardActionArea onClick={()=>{
+        nav(`/productdetails/${props.id}`)
+      }}>
       <IconButton
         sx={{ position: "absolute", top: 8, right: 8, zIndex: 1 }}
         aria-label="add to wishlist"
@@ -32,13 +33,12 @@ const ProductCard2 = (props) => {
         alt={"Demo project"}
       ></CardMedia>
       <CardContent>
-        <Typography variant={"h6"} textAlign={"center"}>
+        <Typography variant={"p"} textAlign={"center"}>
           {props.name}
         </Typography>
-        <Typography variant={"p"} textAlign={"center"}>
-          Hoody
-        </Typography>
+        
       </CardContent>
+      </CardActionArea>
     </Card>
   );
 };
