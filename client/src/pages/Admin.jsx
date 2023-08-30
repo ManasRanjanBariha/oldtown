@@ -104,7 +104,7 @@ const Admin = () => {
 
   return (
     <>
-   
+   <NavBar/>
     <Box
       component="form"
       sx={{

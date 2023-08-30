@@ -8,6 +8,7 @@ import Login from "../pages/Login";
 import UserDetails from "../pages/UserDetails";
 import  Admin  from '../pages/Admin'
 import {useParams} from 'react-router-dom'
+import CheckoutPage from "../pages/CheckoutPage";
 const AllRoutes = () => {
   
   return (
@@ -19,6 +20,7 @@ const AllRoutes = () => {
       <Route path="/productdetails/:id" element={<ProductDetail />} />
       <Route path="/userdetail" element={<UserDetails />} />
        <Route path='/admin' element={<Admin/>}></Route>
+       <Route path='/checkout' element={<CheckoutPage/>}></Route>
        <Route path='/profile' element={<UserDetails/>}></Route>
 
     </Routes>

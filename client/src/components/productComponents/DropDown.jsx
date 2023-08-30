@@ -96,7 +96,7 @@ export default function DropDown() {
 
       <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent={'center'} gap={'3'}>
         {
-          filteredProd.map((el) => (
+          filteredProd.length==0?<h2>Product not found</h2>:filteredProd.map((el) => (
             <Box key={el.id}>
               <ProductStyle {...el} />
             </Box>
