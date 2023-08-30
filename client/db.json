@@ -7,7 +7,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373919003/665/410373919003_3_3252.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373919003/665/410373919003_4_6570.webp",
       "price": "49999",
-      "category": "Men",
+      "category": "men",
       "size": "Large",
       "id": 1
     },
@@ -18,7 +18,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373806008/665/410373806008_2_6523.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373806008/665/410373806008_3_4215.webp",
       "price": "27999",
-      "category": "Men",
+      "category": "men",
       "size": "Large",
       "id": 2
     },
@@ -29,7 +29,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410360453006/665/410360453006_2_4177.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:900)/product/410360453006/665/410360453006_3_7280.webp",
       "price": "2000",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 3
     },
@@ -40,7 +40,7 @@
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373892004/665/410373892004_2_3916.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373892004/665/410373892004_3_1922.webp",
       "price": "5000",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 4
     },
@@ -52,7 +52,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372722004/665/410372722004_5_1805.webp",
       "price": "3000",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 5
     },
@@ -64,31 +64,31 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372477010/665/410372477010_3_2979.webp",
       "price": "36999",
       "product": "jeans",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 6
     },
     {
       "name": "HIRESH S.II MEN BLACK WALLET",
-      "desc": "Men's bi-fold wallet made from grainy leather, embellished on the front with oval D logo hardware.",
+      "desc": "men's bi-fold wallet made from grainy leather, embellished on the front with oval D logo hardware.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345149001/665/410345149001_1_9493.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345149001/665/410345149001_2_3100.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345149001/665/410345149001_4_5137.webp",
       "price": "18999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 7
     },
     {
       "name": "JOHNNY MEN BROWN WALLET",
-      "desc": "Men's card holder crafted from grained leather. Detailed with embossed branding on one side and a silver logo plaque on the other, this slim accessory holds six cards and has an additional discreet slot in the middle.",
+      "desc": "men's card holder crafted from grained leather. Detailed with embossed branding on one side and a silver logo plaque on the other, this slim accessory holds six cards and has an additional discreet slot in the middle.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345150002/665/410345150002_1_3074.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345150002/665/410345150002_2_1356.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345150002/665/410345150002_3_3863.webp",
       "price": "7999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 8
     },
@@ -100,7 +100,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410279568029/665/410279568034_3_4197.webp",
       "price": "29999",
       "product": "jeans",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 9
     },
@@ -112,7 +112,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373654001/665/410373654001_3_5507.webp",
       "price": "15999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 10
     },
@@ -124,7 +124,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410279568035/665/410279568035_3_3905.webp",
       "price": "29999",
       "product": "jeans",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 11
     },
@@ -136,19 +136,19 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372526001/665/410372526001_3_1454.webp",
       "price": "19999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 12
     },
     {
       "name": "S-OMAR-SSL REGULAR GREY MAN SHIRT",
-      "desc": "Men's shirt crafted from a blend of cotton and hemp slub yarn for a crisp, lightweight feel. Regular fit with short sleeves, adorned with tonal oval D embroidery on the left chest pocket.",
+      "desc": "men's shirt crafted from a blend of cotton and hemp slub yarn for a crisp, lightweight feel. Regular fit with short sleeves, adorned with tonal oval D embroidery on the left chest pocket.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372671004/665/410372671004_1_7956.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372671004/665/410372671004_2_9185.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372671004/665/410372671004_3_1301.webp",
       "price": "16999",
       "product": "t-shirt",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 13
     },
@@ -160,19 +160,19 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410279568027/665/410279568046_3.webp",
       "price": "29999",
       "product": "jeans",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 14
     },
     {
       "name": "S-FRANK-CHECK REGULAR MAN SHIRT",
-      "desc": "Men's shirt built from high-density organic cotton poplin. This regular-fit style flaunts a checked pattern, updated with a spray can effect. Finished with a washed treatment for a faded look.",
+      "desc": "men's shirt built from high-density organic cotton poplin. This regular-fit style flaunts a checked pattern, updated with a spray can effect. Finished with a washed treatment for a faded look.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372583008/665/410372583008_1_2453.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372583008/665/410372583008_2_2227.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372583008/665/410372583008_3_4399.webp",
       "price": "17999",
       "product": "t-shirt",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 15
     },
@@ -184,7 +184,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410081734007/665/410081734007_3_5493.webp",
       "price": "8999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 16
     },
@@ -196,7 +196,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345060010/665/410345060010_3_1503.webp",
       "price": "7999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 17
     },
@@ -208,19 +208,19 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372616011/665/410372616011_3_7270.webp",
       "price": "9999",
       "product": "t-shirt",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 18
     },
     {
       "name": "S-DEWNY-CMF GREEN LOOSE PRINTED SHIRTS",
-      "desc": "Men's loose-fit shirt built from TENCEL™ twill. Its all-over Planet print is inspired by images of the globe when viewed from above. Topped with patch pockets on the chest.",
+      "desc": "men's loose-fit shirt built from TENCEL™ twill. Its all-over Planet print is inspired by images of the globe when viewed from above. Topped with patch pockets on the chest.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373676009/665/410373676009_1_7098.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373676009/665/410373676009_2_9045.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373676009/665/410373676009_3_8511.webp",
       "price": "29999",
       "product": "t-shirt",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 19
     },
@@ -232,7 +232,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373666006/665/410373666006_3_4606.webp",
       "price": "46999",
       "product": "jeans",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 20
     },
@@ -244,7 +244,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410321639001/665/410321639001_4_9429.webp",
       "price": "21999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 21
     },
@@ -256,19 +256,19 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372948001/665/410372948001_4_8200.webp",
       "price": "21495",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 22
     },
     {
       "name": "S-FRANK-CHECK MAN REGULAR FIT SHIRT",
-      "desc": "Men's shirt built from high-density organic cotton poplin. This regular-fit style flaunts a checked pattern, updated with a spray can effect. Finished with a washed treatment for a faded look. CERTIFIED ORGANIC COTTON: The fabric is made using 100% certified organic cotton, grown using farming practices that support biodiversity and healthy ecosystems.",
+      "desc": "men's shirt built from high-density organic cotton poplin. This regular-fit style flaunts a checked pattern, updated with a spray can effect. Finished with a washed treatment for a faded look. CERTIFIED ORGANIC COTTON: The fabric is made using 100% certified organic cotton, grown using farming practices that support biodiversity and healthy ecosystems.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372583007/665/410372583007_1_5713.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372583007/665/410372583007_2_7520.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372583007/665/410372583007_3_4534.webp",
       "price": "17999",
       "product": "t-shirt",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 23
     },
@@ -280,7 +280,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410360457008/665/410360457008_3_5867.webp",
       "price": "12799",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 24
     },
@@ -292,7 +292,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372551003/665/410372551003_3_7591.webp",
       "price": "13599",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 25
     },
@@ -304,7 +304,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345067008/665/410345067008_3_9662.webp",
       "price": "17599",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 26
     },
@@ -316,7 +316,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410374005001/665/410374005001_3_8523.webp",
       "price": "52999",
       "product": "accessories",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 27
     },
@@ -328,7 +328,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373817004/665/410373817004_1_3282.webp",
       "price": "22999",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 28
     },
@@ -340,7 +340,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373821004/665/410373821004_1_5595.webp",
       "price": "39999",
       "product": "t-shirt",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 29
     },
@@ -352,7 +352,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373982001/665/410373982001_3_3524.webp",
       "price": "32999",
       "product": "accessories",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 30
     },
@@ -364,7 +364,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373984001/665/410373984001_3_5584.webp",
       "price": "36999",
       "product": "accessories",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 31
     },
@@ -376,7 +376,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373989001/665/410373989001_3_7046.webp",
       "price": "21999",
       "product": "accessories",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 32
     },
@@ -388,7 +388,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373990002/665/410373990002_3_5984.webp",
       "price": "29999",
       "product": "accessories",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 33
     },
@@ -400,7 +400,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372492006/665/410372492006_3_4743.webp",
       "price": "27999",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 34
     },
@@ -412,7 +412,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372767005/665/410372767005_3_4973.webp",
       "price": "34999",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 35
     },
@@ -424,43 +424,43 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373889005/665/410373889005_3_3427.webp",
       "price": "32999",
       "product": "accessories",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 36
     },
     {
       "name": "T-UNCUTIE-LONG-L3 BLACK SLIM PRINTED T-SHIRT",
-      "desc": "Women's slim-fit tee built from cotton jersey, printed with a globe graphic and spiralling Diesel 'World Wide' lettering. Finished with a contrast neckline and coverstitching.",
+      "desc": "women's slim-fit tee built from cotton jersey, printed with a globe graphic and spiralling Diesel 'World Wide' lettering. Finished with a contrast neckline and coverstitching.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373874004/665/410373874004_1_7497.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373874004/665/410373874004_2_2971.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373874004/665/410373874004_3_8822.webp",
       "price": "11999",
       "product": "t-shirt",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 37
     },
     {
       "name": "T-UNCUTIE-LONG-L3 GREY SLIM PRINTED T-SHIRT",
-      "desc": "Women's slim-fit tee built from cotton jersey, printed with a globe graphic and spiralling Diesel 'World Wide' lettering. Finished with a contrast neckline and coverstitching.",
+      "desc": "women's slim-fit tee built from cotton jersey, printed with a globe graphic and spiralling Diesel 'World Wide' lettering. Finished with a contrast neckline and coverstitching.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373874008/665/410373874008_1_3437.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373874008/665/410373874008_2_1875.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373874008/665/410373874008_3_8872.webp",
       "price": "11999",
       "product": "t-shirt",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 38
     },
     {
       "name": "C-DOU-STRIPE MULTI REGULAR STRIPES SHIRTS",
-      "desc": "Women's black and white striped shirt built from double-twisted cotton. Styled with a rounded lower back hem, it features an embroidered oval D logo in contrast yarn on the chest.",
+      "desc": "women's black and white striped shirt built from double-twisted cotton. Styled with a rounded lower back hem, it features an embroidered oval D logo in contrast yarn on the chest.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373678004/665/410373678004_3_1659.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373678004/665/410373678004_4_9335.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373678004/665/410373678004_1_7914.webp",
       "price": "24999",
       "product": "t-shirt",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 39
     },
@@ -472,19 +472,19 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373892004/665/410373892004_1_2717.webp",
       "price": "14999",
       "product": "t-shirt",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 40
     },
     {
       "name": "DE-DAVIS-L-S BLUE LOOSE SOLID DRESSES",
-      "desc": "Women's midi dress designed in a shirt silhouette with a loose fit. The asymmetric, high-low hem is split on the sides. Crafted from light blue TENCEL™ Lyocell denim and decorated on the back yoke with a large, super stonewashed Oval D logo patch finished with raw edges.",
+      "desc": "women's midi dress designed in a shirt silhouette with a loose fit. The asymmetric, high-low hem is split on the sides. Crafted from light blue TENCEL™ Lyocell denim and decorated on the back yoke with a large, super stonewashed Oval D logo patch finished with raw edges.",
       "image1": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373921003/665/410373921003_3_7776.webp",
       "image2": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373921003/665/410373921003_1_9789.webp",
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373921003/665/410373921003_2_3855.webp",
       "price": "59999",
       "product": "t-shirt",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 41
     },
@@ -496,7 +496,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372462004/665/410372462004_3_5869.webp",
       "price": "22399",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 42
     },
@@ -508,7 +508,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410291682001/665/410291682007_3.webp",
       "price": "20299",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 43
     },
@@ -520,7 +520,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345023007/665/410345023007_2_3886.webp",
       "price": "15399",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 44
     },
@@ -532,7 +532,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345220003/665/410345220003_5_6388.webp",
       "price": "25899",
       "product": "jeans",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 45
     },
@@ -544,7 +544,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372553002/665/410372553002_3_6990.webp",
       "price": "13599",
       "product": "t-shirt",
-      "category": "Women",
+      "category": "women",
       "size": "Medium",
       "id": 46
     },
@@ -556,7 +556,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410271568005/665/410271568005_3.webp",
       "price": "4899",
       "product": "jeans",
-      "category": "Kid",
+      "category": "kid",
       "size": "Medium",
       "id": 47
     },
@@ -568,7 +568,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345358005/665/410345358005_3_3999.webp",
       "price": "7999",
       "product": "jeans",
-      "category": "Kid",
+      "category": "kid",
       "size": "Medium",
       "id": 48
     },
@@ -580,7 +580,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373541005/665/410373541005_1_9510.webp",
       "price": "7999",
       "product": "t-shirt",
-      "category": "Kid",
+      "category": "kid",
       "size": "Medium",
       "id": 49
     },
@@ -592,7 +592,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373531003/665/410373531003_3_4349.webp",
       "price": "3999",
       "product": "accessories",
-      "category": "Kid",
+      "category": "kid",
       "size": "Medium",
       "id": 50
     },
@@ -604,7 +604,7 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373546005/665/410373546005_3_4683.webp",
       "price": "7199",
       "product": "t-shirt",
-      "category": "Kid",
+      "category": "kid",
       "size": "Medium",
       "id": 51
     },
@@ -616,13 +616,13 @@
       "image3": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410315374005/665/410315374005_3_3838.webp",
       "price": "13999",
       "product": "accessories",
-      "category": "Men",
+      "category": "men",
       "size": "Medium",
       "id": 52
     }
   ],
   "jeans": {
-    "Womenjeans": [
+    "womenjeans": [
       {
         "name": "Bootcut",
         "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280540bootcut_fl.webp"
@@ -648,7 +648,7 @@
         "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692280452boyfriend_fl.webp"
       }
     ],
-    "Menjeans": [
+    "menjeans": [
       {
         "name": "Skinny",
         "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281091skinny_ml.webp"
@@ -673,11 +673,11 @@
   },
   "ptype": [
     {
-      "name": "Mens Belt",
+      "name": "mens Belt",
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692282134FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_BEACHWEAR__CAMOUFLAGE_(UX)_1_1_210323_CC_DIESEL-OPC-FW23_SHOT03-COMP-f.webp"
     },
     {
-      "name": "Women Apeal",
+      "name": "women Apeal",
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692290055FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_KNITWEAR_(FL)_1_1_DIESEL__158.webp"
     },
     {
@@ -685,23 +685,23 @@
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692281976FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_SNEAKERS_(FL)_1_1_210323_CC_DIESEL-OPC-FW23_SHOT02_144-COMP.webp"
     },
     {
-      "name": "Womens Jeans",
+      "name": "womens Jeans",
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692282403FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_OVAL_D_DENIM___EMBROIDERED_(UX)_1_1_DIESEL__895_1.webp"
     },
     {
-      "name": "Womens Bags",
+      "name": "womens Bags",
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692282321FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_DENIM_ACCESORIES_1_1_210323_CC_DIESEL-OPC-FW23_SHOT04-COMP-f.webp"
     },
     {
-      "name": "Women Belt",
+      "name": "women Belt",
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692282097FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_RAW_EDGES_(FL)___NEON_TOUCH_DENIM_(ML)_1_1_DIESEL__1208.webp"
     },
     {
-      "name": "Men Topwear",
+      "name": "men Topwear",
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692282229FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_OVAL_D_DENIM___EMBROIDERED_(UX)_1_1_DIESEL__961.webp"
     },
     {
-      "name": "Mens Denim",
+      "name": "mens Denim",
       "image": "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:300)/banner/1692282522FW23_DROP_1_2_LOOKBOOK___OPC_SELL_OUT_CROPS_RAW_EDGES_(FL)___NEON_TOUCH_DENIM_(ML)_1_1_DIESEL__997.webp"
     }
   ],

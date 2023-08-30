@@ -10,6 +10,7 @@ import NavBar from "../components/navbarComponents/NavBar";
 import { useNavigate } from "react-router-dom";
 
 const CheckoutPage = () => {
+    const nav=useNavigate()
   const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   const totalPrice = cartItems.reduce(
     (total, item) => total + parseInt(item.price),
@@ -18,7 +19,9 @@ const CheckoutPage = () => {
 function onBuy(){
     alert('order confirmed')
     localStorage.clear('cartItems')
+    nav('/')
 }
+
 
   return (
     <div>
