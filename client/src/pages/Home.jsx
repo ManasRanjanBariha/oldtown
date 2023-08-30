@@ -22,28 +22,42 @@ import SmallCardCrousel from "../components/homeComponents/SmallCardCrousel";
 import Footer from "../components/Footer";
 
 import { useNavigate } from "react-router-dom";
-
 const bg1 =
   "https://cdn.pixabay.com/photo/2015/09/05/21/57/girl-925635_640.jpg";
+const bgimage = [
+  {
+    name: "LOGOMANIA",
+    image: "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/original/cms_images/1692290682LOGOMANIA.webp?compress=true&q=70",
+  },
+  {
+    name: "OVALD COLLECTION",
+    image:
+      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/original/cms_images/1692290673OVAL_D_2.webp?compress=true&q=70",
+  },
+  {
+    name: "MONOGRAM",
+    image:
+      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/original/cms_images/1692290659MONOGRAM_2.webp?compress=true&q=70",
+  },
+  {
+    name: "WATCHES",
+    image:
+      "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/original/cms_images/1692290627TIMEFRAMES_2.webp?compress=true&q=70",
+  },
+];
 const Home = () => {
   const [login, setLogin] = useState(false);
-  const [products,setProducts]=useState([])
-  const arr = [1, 2, 3, 4, 5, 7, 8, 9, 9, 4];
-  const ar1 = [1, 2, 3, 4];
-  const nav = useNavigate();
 
-  
+  const nav = useNavigate();
 
   function loginorsignup() {
     nav("/login");
   }
-  function navigatemen()
-  {
-    nav('/Products/man')
+  function navigatemen() {
+    nav("/Products/man");
   }
-  function navigatewomen()
-  {
-    nav('/Products/women')
+  function navigatewomen() {
+    nav("/Products/women");
   }
   return (
     <>
@@ -81,8 +95,8 @@ const Home = () => {
                     color="error"
                     size="large"
                     sx={{ "&:hover": { border: "1px solid white" } }}
-                    onClick={()=>{
-                      navigatemen()
+                    onClick={() => {
+                      navigatemen();
                     }}
                   >
                     Discover Man
@@ -92,8 +106,8 @@ const Home = () => {
                     color="error"
                     size="large"
                     sx={{ "&:hover": { border: "1px solid white" } }}
-                    onClick={()=>{
-                      navigatewomen()
+                    onClick={() => {
+                      navigatewomen();
                     }}
                   >
                     Discover Woman
@@ -113,10 +127,10 @@ const Home = () => {
         <Box mb={20} />
         <Container>
           <Grid container spacing={3}>
-            {ar1.map((e) => {
+            {bgimage.map((e) => {
               return (
                 <Grid item xs={6}>
-                  <ImageCard />
+                  <ImageCard {...e} />
                 </Grid>
               );
             })}

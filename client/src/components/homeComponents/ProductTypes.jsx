@@ -14,6 +14,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import {useNavigate} from 'react-router-dom'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -39,6 +40,7 @@ const ProductTypes = () => {
     setFemalejeans(data.Womenjeans)
     setMalejeans(data.Menjeans)
   }
+  const nav=useNavigate()
   useEffect(()=>{
     fetchData()
     
@@ -108,7 +110,9 @@ const ProductTypes = () => {
             {femalejeans.map((e) => {
               return (
                 <Box sx={{ maxHeight: { lg: "250px", md: "none" } }}>
-                  <SwiperSlide key={e.image}>
+                  <SwiperSlide key={e.image} onClick={()=>{
+                    nav('/products/women')
+                  }}>
                     <Box maxHeight={"5%"}>
                       <Productcard name={e.name} image={e.image} />
                     </Box>
@@ -130,7 +134,9 @@ const ProductTypes = () => {
           >
             {malejeans.map((e) => {
               return (
-                <SwiperSlide key={e.name}>
+                <SwiperSlide key={e.name} onClick={()=>{
+                  nav('/products/men')
+                }}>
                   <Productcard name={e.name} image={e.image} />
                 </SwiperSlide>
               );

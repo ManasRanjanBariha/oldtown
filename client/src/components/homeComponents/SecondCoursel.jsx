@@ -17,6 +17,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import { useNavigate } from "react-router-dom";
 
 const arr = [1, 2, 3, 4, 5, 6];
 const GenderButton = styled(Button)(({ theme }) => ({
@@ -27,8 +28,10 @@ const GenderButton = styled(Button)(({ theme }) => ({
 }));
 
 const SecondCoursel = () => {
+  const nav = useNavigate();
   const [male, setMale] = useState(true);
-  const [products,setProducts]=useState([])
+  const [products, setProducts] = useState([]);
+  //Function to fetch data from api
   async function fetchDataWomen() {
     let res = await fetch(
       "http://localhost:3000/product/?category=Women&_limit=6"
@@ -42,12 +45,20 @@ const SecondCoursel = () => {
     );
     let data = await res.json();
     setProducts(data);
-    console.log('data',products)
+    console.log("data", products);
   }
-  useEffect(()=>{
-    fetchDataMen()
-  },[])
-  
+
+  //function to navigate
+  function navigate() {
+    male ? nav("/products/men") : nav("/products/women");
+  }
+
+  //Fetch data when loads
+  useEffect(() => {
+    fetchDataMen();
+  }, []);
+
+  //Fetch data when change button clicks
   useEffect(() => {
     male ? fetchDataMen() : fetchDataWomen();
     console.log(products);
@@ -89,6 +100,8 @@ const SecondCoursel = () => {
           </ButtonGroup>
         </Box>
       </Box>
+
+      
       <Container>
         <Swiper
           modules={[Navigation, Scrollbar, Autoplay]}
@@ -99,10 +112,12 @@ const SecondCoursel = () => {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log("Working")}
         >
+
+        
           {products.map((e) => {
             return (
               <SwiperSlide>
-                <ProductCard2 {...e}/>
+                <ProductCard2 {...e} />
               </SwiperSlide>
             );
           })}

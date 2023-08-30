@@ -1,5 +1,4 @@
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Test from "./Test";
@@ -8,7 +7,9 @@ import ProductDetail from "../pages/ProductDetail";
 import Login from "../pages/Login";
 import UserDetails from "../pages/UserDetails";
 import  Admin  from '../pages/Admin'
+import {useParams} from 'react-router-dom'
 const AllRoutes = () => {
+  
   return (
     <Routes>
       <Route path="/" element={<Home />} />
