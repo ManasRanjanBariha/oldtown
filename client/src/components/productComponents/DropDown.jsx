@@ -7,27 +7,31 @@ import Select from '@mui/material/Select';
 import { Stack } from '@mui/material';
 import ProductStyle from './ProductStyle';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 export default function DropDown() {
+  const x=useParams()
   const [category, setCategory] = React.useState('');
   const [size, setSize] = React.useState('');
   const [prod, setProd] = React.useState([]);
   const [filteredProd, setFilteredProd] = useState([]);
 
   async function fetchData() {
-    let res = await fetch("http://localhost:3000/product");
+    let res = await fetch(`http://localhost:3000/product/?category=${x.type}`);
     let data = await res.json();
     setProd(data);
+    // console.log(data)
   }
 
   useEffect(() => {
     fetchData();
+    // console.log(x.type)
   }, []);
 
   useEffect(() => {
     const filteredProducts = prod.filter((product) => {
       if (!category && !size) {
-        return true; // No filters applied, show all products
+        return true;
       }
       if (category && size) {
         return product.product === category && product.size === size;

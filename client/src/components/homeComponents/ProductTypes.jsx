@@ -37,8 +37,8 @@ const ProductTypes = () => {
     let res= await fetch('http://localhost:3000/jeans')
     let data= await res.json();
     console.log(data)
-    setFemalejeans(data.Womenjeans)
-    setMalejeans(data.Menjeans)
+    setFemalejeans(data.womenjeans)
+    setMalejeans(data.menjeans)
   }
   const nav=useNavigate()
   useEffect(()=>{

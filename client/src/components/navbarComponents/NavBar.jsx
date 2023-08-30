@@ -1,6 +1,5 @@
 import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { Theme } from "../../Theme";
 import styled from "@emotion/styled";
 import Person2Icon from "@mui/icons-material/Person2";
 import SearchIcon from "@mui/icons-material/Search";
@@ -56,6 +55,9 @@ const NavBar = () => {
   function navigatewomen() {
     nav("/Products/women");
   }
+  function navigatekid(){
+    nav('/Products/kid')
+  }
 
   function searchBar() {
     setShowBox(!showBox);
@@ -71,6 +73,7 @@ const NavBar = () => {
     // console.log(searchResults);
     nav("/Products/men");
   };
+  
 
   return (
     <AppBar position="sticky">
@@ -78,7 +81,7 @@ const NavBar = () => {
         <Toolbar sx={{ display: { xs: "none", md: "flex", xl: "center" } }}>
           <StyledButton onClick={navigatemen}>men</StyledButton>
           <StyledButton onClick={navigatewomen}>Women</StyledButton>
-          <StyledButton>KID</StyledButton>
+          <StyledButton onClick={navigatekid}>KID</StyledButton>
           <StyledButton>SALE</StyledButton>
         </Toolbar>
         {/* <Box display={"flex"} alignItems={"center"} justifyContent={"space-between" }> */}
@@ -116,13 +119,16 @@ const NavBar = () => {
             alignItems: "left",
             padding: "0px",
           }}
+          onClick={() => {
+            nav("/");
+          }}
         >
           <Typography variant="h6" sx={{ fontFamily: "Scto_Grotesk_Regular" }}>
             DIESEL
           </Typography>
           successful livng
         </Toolbar>
-        {/* </Box> */}
+        
 
         {/* for smaller screen */}
 

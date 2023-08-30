@@ -203,9 +203,9 @@ const Admin = () => {
             label="Category"
             onChange={handleCategory}
           >
-            <MenuItem value={"Men"}>Men</MenuItem>
-            <MenuItem value={"Women"}>Women</MenuItem>
-            <MenuItem value={"Kid"}>Kid</MenuItem>
+            <MenuItem value={"men"}>Men</MenuItem>
+            <MenuItem value={"women"}>Women</MenuItem>
+            <MenuItem value={"kid"}>Kid</MenuItem>
           </Select>
         </FormControl>
 
