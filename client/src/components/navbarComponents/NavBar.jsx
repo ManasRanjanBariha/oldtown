@@ -1,5 +1,5 @@
 import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Theme } from "../../Theme";
 import styled from "@emotion/styled";
 import Person2Icon from "@mui/icons-material/Person2";
@@ -36,15 +36,22 @@ const NavBar = () => {
   const [showBox, setShowBox] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const[login,setLogin]=useState(false);
+
 
 
   const nav = useNavigate();
 
+  useEffect(()=>{
+    const locFetch=localStorage.getItem('login')
+    setLogin(locFetch)
+  },[])
+
   function loginorsignup() {
-    nav("/login");
+    !login?nav("/login"):nav("/profile");
   }
   function navigatemen() {
-    nav("/Products/man");
+    nav("/Products/men");
   }
   function navigatewomen() {
     nav("/Products/women");
@@ -62,15 +69,15 @@ const NavBar = () => {
 
     // setSearchResults(filteredResults);
     // console.log(searchResults);
-    nav("/Products/man");
+    nav("/Products/men");
   };
 
   return (
     <AppBar position="sticky">
       <Stack direction="row" spacing={2} justifyContent={"space-between"}>
         <Toolbar sx={{ display: { xs: "none", md: "flex", xl: "center" } }}>
-          <StyledButton onClick={navigatemen}>MAN</StyledButton>
-          <StyledButton onClick={navigatewomen}>WOMAN</StyledButton>
+          <StyledButton onClick={navigatemen}>men</StyledButton>
+          <StyledButton onClick={navigatewomen}>Women</StyledButton>
           <StyledButton>KID</StyledButton>
           <StyledButton>SALE</StyledButton>
         </Toolbar>
@@ -132,7 +139,9 @@ const NavBar = () => {
             <SearchIcon fontSize="s" />
           </RightButton>
 
-          <RightButton>
+          <RightButton onClick={()=>{
+            !login?nav('/login'):nav('/checkout')
+          }}>
             <WorkIcon fontSize="s" />
           </RightButton>
         </Toolbar>
@@ -151,7 +160,9 @@ const NavBar = () => {
           <RightButton>
             <QuestionMarkIcon />
           </RightButton>
-          <RightButton>
+          <RightButton onClick={()=>{
+            !login?nav('/login'):nav('/checkout')
+          }}>
             <WorkIcon />
           </RightButton>
         </Toolbar>

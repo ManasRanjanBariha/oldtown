@@ -61,6 +61,7 @@ const Login = () => {
         dataPost()
       }
       localStorage.setItem('number',phone)
+      localStorage.setItem('login',true)
       nav("/profile")
 
     } else {

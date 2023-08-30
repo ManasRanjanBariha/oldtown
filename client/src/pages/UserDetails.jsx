@@ -2,18 +2,31 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/navbarComponents/NavBar";
 
+const adminNum='8342983389';
+
+
 const UserDetails = () => {
   const nav = useNavigate();
   const name = "New user";
   const [number, setNumber] = useState(""); // Initialize as state
+
+  const [userAdmin,setUserAdmin]=useState(false);
   
   useEffect(() => {
     const storedNumber = localStorage.getItem("number");
-    setNumber(storedNumber); // Set the number from localStorage
+    setNumber(storedNumber); 
+    
+    console.log(userAdmin);
   }, []);
+  useEffect(()=>{
+    setUserAdmin(number===adminNum)
+  },[number])
 
   const handleLogout = () => {
-    localStorage.removeItem("number"); // Change "userData" to "number"
+    localStorage.removeItem("number"); 
+    localStorage.setItem('login',false);
+    localStorage.removeItem('cartItems')
+    
     nav("/login");
   };
 
@@ -27,6 +40,11 @@ const UserDetails = () => {
           <p>Name: {name}</p>
           <p>Number: {number}</p>
         </div>
+        { userAdmin && <button style={{ background: "#dc3530" ,marginRight:'10px' }} onClick={()=>{
+          nav('/admin')
+        }}>
+          Admin
+        </button>}
         <button style={{ background: "#dc3530" }} onClick={handleLogout}>
           Logout
         </button>
