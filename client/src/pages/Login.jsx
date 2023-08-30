@@ -1,12 +1,29 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "../components/navbarComponents/NavBar";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [phone, setPhone] = useState("");
   const [otp, setOtp] = useState("");
   const [isValid, setIsValid] = useState(false);
   const [showOtpEntry, setShowOtpEntry] = useState(false);
+  const [num, setNum] = useState('');
+  const [pnumber,setPnumber]=useState([])
+  const [numbers,setNumbers]=useState([])
+
   const defaultOtp = "1234";
   // New state for OTP entry
+  
+  const nav=useNavigate();
+
+  // user data entry for account
+
+  // const [name,setName]=useState("User");
+  // const [num,setNum]=useState("");
+
+  
+  function handleMobile(event){
+    setNum(event.target.value)
+  } 
 
   useEffect(() => {
     const isValidMobile = /^\d{10}$/.test(phone);
@@ -14,7 +31,9 @@ const Login = () => {
   }, [phone]);
 
   const handleChange = (event) => {
-    setPhone(event.target.value);
+    const { id, value } = event.target;
+    if (id === "number") setPhone(value);
+    // setPhone(event.target.value);
   };
 
   const handleSendOtp = () => {
@@ -32,15 +51,67 @@ const Login = () => {
   };
 
   const handleSubmit = (event) => {
+    console.log(numbers)
     event.preventDefault();
     if (otp === defaultOtp) {
       alert("OTP matched! Submission successful.");
+      const ispresent=pnumber.some(item=>item.number===phone)
+      if(!ispresent)
+      {
+        dataPost()
+      }
+      localStorage.setItem('number',phone)
+      nav("/profile")
+
     } else {
       alert("Incorrect OTP. Please try again.");
     }
 
     // Handle form submission
   };
+
+  // Entering data of users
+
+
+
+
+  async function dataPost()
+  {   
+    
+    const obj={
+      number:phone,
+    };
+    let res = await fetch("http://localhost:3000/user",{
+      method: "POST",
+      body: JSON.stringify(obj),
+      headers: {
+        "Content-type": "application/json",
+      }
+    });
+    console.log(obj)
+  }
+
+  //fetching all the data from json
+  async function fetchData() {
+    try {
+      let res = await fetch("http://localhost:3000/user");
+      let data = await res.json();
+      setPnumber(data)
+      // console.log(pnumber)
+      const numm=pnumber.map(item=>item.number);
+      // console.log(data)
+      // console.log(numm)
+      setNumbers(numm)
+      console.log('numbers',numbers)
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+    
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -60,7 +131,7 @@ const Login = () => {
                 onChange={handleChange}
                 name="newnumber"
                 autoComplete="off"
-                id="login-input"
+                id="number"
                 className="textinputbox"
                 value={phone}
                 pattern="[0-9]{10}"
