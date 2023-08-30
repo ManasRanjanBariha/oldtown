@@ -32,6 +32,20 @@ const ProductDetail = (props) => {
     setProd(data)
     setImg(prod.image1)
   }
+  const addToCart = () => {
+    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    const item = {
+      id: prod.id,
+      name: prod.name,
+      price: prod.price,
+      size: selectedSize,
+      image: img,
+    };
+    cartItems.push(item);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    alert("Item added to cart!");
+  };
+
   useEffect(()=>{
     fetchData()
     setImg(prod.image1)
@@ -90,6 +104,9 @@ const ProductDetail = (props) => {
                 variant="contained"
                 color="primary"
                 startIcon={<ShoppingCart />}
+                onClick={()=>{
+                  addToCart()
+                }}
               >
                 Add to Cart
               </Button>

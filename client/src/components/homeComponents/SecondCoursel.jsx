@@ -116,7 +116,7 @@ const SecondCoursel = () => {
         
           {products.map((e) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={e.id}>
                 <ProductCard2 {...e} />
               </SwiperSlide>
             );
