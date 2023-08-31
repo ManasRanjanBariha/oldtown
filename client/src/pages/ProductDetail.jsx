@@ -11,7 +11,7 @@ import {
 import { Star, StarHalf, ShoppingCart } from "@mui/icons-material";
 import NavBar from "../components/navbarComponents/NavBar";
 import "../styles/detailstyle.css";
-import {useParams} from 'react-router-dom'
+import {useNavigate, useParams} from 'react-router-dom'
 
 const img1 =
   "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373974001/665/410373974001_1_1917.webp";
@@ -22,6 +22,7 @@ const img3 =
 const img4 =
   "https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410373981002/665/410373981002_1_8495.webp";
 const ProductDetail = (props) => {
+  const nav=useNavigate()
   const [img,setImg]=useState('')
   const [selectedSize, setSelectedSize] = useState("");
   const [prod,setProd]=useState({})
@@ -33,6 +34,18 @@ const ProductDetail = (props) => {
     setImg(prod.image1)
   }
   const addToCart = () => {
+    if(selectedSize=='')
+    {
+      alert('select a size')
+      return;
+    }
+    const login=localStorage.getItem('login')
+    console.log(login);
+    if(login==null)
+    {
+      nav('/login')
+      return;
+    }
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
     const item = {
       id: prod.id,
@@ -44,6 +57,7 @@ const ProductDetail = (props) => {
     cartItems.push(item);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     alert("Item added to cart!");
+    nav('/checkout')
   };
 
   useEffect(()=>{
@@ -95,10 +109,6 @@ const ProductDetail = (props) => {
                   <MenuItem value="medium">Medium</MenuItem>
                   <MenuItem value="large">Large</MenuItem>
                 </Select>
-              </Typography>
-
-              <Typography>
-                Quantity: <input type="text" value="1" />
               </Typography>
               <Button
                 variant="contained"

@@ -40,7 +40,7 @@ function onBuy(){
                   </Grid>
                   <Grid item xs={9}>
                     <Typography variant="h6">{item.name}</Typography>
-                    <Typography>${item.price}</Typography>
+                    <Typography>₹{item.price}</Typography>
                     <Typography>Size: {item.size}</Typography>
                   </Grid>
                 </Grid>
@@ -49,7 +49,7 @@ function onBuy(){
           ))}
         </Grid>
         <Typography variant="h5" gutterBottom>
-          Total Price: ${totalPrice}
+          Total Price: ₹{totalPrice}
         </Typography>
         <Button variant="contained" color="primary" onClick={()=>{
             onBuy()

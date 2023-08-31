@@ -63,15 +63,8 @@ const NavBar = () => {
     setShowBox(!showBox);
   }
   const handleSearch = () => {
-    // Perform the search based on searchQuery
-    // For example, you can filter your products based on the search query
-    // const filteredResults = prod.filter((product) =>
-    //   product.product.toLowerCase().includes(searchQuery.toLowerCase())
-    // );
-
-    // setSearchResults(filteredResults);
-    // console.log(searchResults);
-    nav("/products/men");
+    console.log(searchQuery)
+    nav(`/products/${searchQuery}`);
   };
   
 
@@ -82,7 +75,9 @@ const NavBar = () => {
           <StyledButton onClick={navigatemen}>men</StyledButton>
           <StyledButton onClick={navigatewomen}>Women</StyledButton>
           <StyledButton onClick={navigatekid}>KID</StyledButton>
-          <StyledButton>SALE</StyledButton>
+          <StyledButton onClick={()=>{
+            nav('/products/sale')
+          }}>SALE</StyledButton>
         </Toolbar>
         {/* <Box display={"flex"} alignItems={"center"} justifyContent={"space-between" }> */}
         <Box
@@ -157,7 +152,7 @@ const NavBar = () => {
           <RightButton onClick={loginorsignup}>
             <Person2Icon />
           </RightButton>
-          <RightButton onClick={searchBar}>
+          <RightButton onClick={searchBar} >
             <SearchIcon />
           </RightButton>
           <RightButton>
