@@ -50,13 +50,13 @@ const NavBar = () => {
     !login?nav("/login"):nav("/profile");
   }
   function navigatemen() {
-    nav("/Products/men");
+    nav("/products/men");
   }
   function navigatewomen() {
-    nav("/Products/women");
+    nav("/products/women");
   }
   function navigatekid(){
-    nav('/Products/kid')
+    nav('/products/kid')
   }
 
   function searchBar() {
@@ -71,7 +71,7 @@ const NavBar = () => {
 
     // setSearchResults(filteredResults);
     // console.log(searchResults);
-    nav("/Products/men");
+    nav("/products/men");
   };
   
 

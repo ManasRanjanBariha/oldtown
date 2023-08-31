@@ -26,7 +26,7 @@ export default function DropDown() {
   useEffect(() => {
     fetchData();
     // console.log(x.type)
-  }, []);
+  }, [x]);
 
   useEffect(() => {
     const filteredProducts = prod.filter((product) => {
