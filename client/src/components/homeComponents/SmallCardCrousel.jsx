@@ -9,6 +9,7 @@ import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
 import { Box, Container, Stack } from "@mui/material";
 import { useEffect, useState } from "react";
 
+
 const SmallCardCrousel = () => {
   // const arr = [1, 2, 3, 4, 5, 7, 8, 9];
   const [products,setProducts]=useState([])
