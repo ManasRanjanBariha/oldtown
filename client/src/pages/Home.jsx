@@ -54,7 +54,7 @@ const Home = () => {
     nav("/login");
   }
   function navigatemen() {
-    nav("/Products/man");
+    nav("/Products/men");
   }
   function navigatewomen() {
     nav("/Products/women");

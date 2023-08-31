@@ -34,14 +34,14 @@ const SecondCoursel = () => {
   //Function to fetch data from api
   async function fetchDataWomen() {
     let res = await fetch(
-      "http://localhost:3000/product/?category=Women&_limit=6"
+      "http://localhost:3000/product/?category=women&_limit=6"
     );
     let data = await res.json();
     setProducts(data);
   }
   async function fetchDataMen() {
     let res = await fetch(
-      "http://localhost:3000/product/?category=Men&_limit=5"
+      "http://localhost:3000/product/?category=men&_limit=5"
     );
     let data = await res.json();
     setProducts(data);
